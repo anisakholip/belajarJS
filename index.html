@@ -4,14 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+</head> 
+<style>
+    ul {
+            list-style-type: none;
+            padding: 10px;
+            margin-left: 5px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .delete-button {
+            margin-left: 25px;
+            cursor: pointer;
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+
 <body>
-   
+<!--    
     <form onsubmit="return false">
-        <input type="text" id="input_form" value="bisa">
+        <input type="text" id="input_form" value="">
         <button id="tombol_form">tekan</button>
     </form>
-    <p>hasil teks <span id="hasil"></span></p>
-     <script src="main.js"></script>
-</body>
-</html>
+    <p>hasil teks <span id="hasil"></span></p> -->
+    <!-- <h3>To Do List</h3>
+    <form action="">
+        <input type="text" id="input" value="membentuk kelompok">
+        <button id="button">Submit</button>
+    </form>
+    <input type="checkbox" id="tugas1" name="tugas1" value="">
+    <label for="tugas1"> membentuk Kelompok</label><br>
+    <input type="checkbox" id="tugas2" name="tugas2" value="">
+    <label for="tugas2"> Diskusi ide kelompok</label><br>
+    <input type="checkbox" id="tugas3" name="tugas3" value=""> -->
+    <!-- <label for="tugas3">penentuan peran dan tugas </label><br> 
+    <input type="checkbox" id="tugas4" name="tugas4" value="">
+    <label for="tugas4"> Laporan pengerjaan</label><br>  -->
+    <body>
+        <h2>To-do List</h2>
+        <input type="text" id="taskInput" placeholder="">
+        <button onclick="addTask()">submit</button>
+        <ul id="taskList"></ul>
+    <script src="main.js"></script>
+    </body>
+    </html>
+    
